@@ -15,6 +15,11 @@ interface VenueItem {
   interface VenueJson {
     success: boolean,
     count: number,
-    pagination: Object,
+    pagination: Record<string, unknown>,
     data: VenueItem[]
   }
+
+interface VenueDetailJson {
+  success: boolean;
+  data: VenueItem;
+}

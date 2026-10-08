@@ -1,8 +1,8 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
+  --background: #ffffff;
+  --foreground: #171717;
 
-  --text-primary: #000;
+  --text-primary: #171717;
   --text-secondary: #666;
 
   --button-primary-hover: #383838;
@@ -13,9 +13,25 @@
   flex: 1;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsGrid {
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 64px;
 }
 
 .main {
@@ -129,10 +145,10 @@ a.secondary {
   }
 
   .page {
-    --background: #000;
-    --foreground: #000;
+    --background: #ffffff;
+    --foreground: #171717;
 
-    --text-primary: #ededed;
+    --text-primary: #171717;
     --text-secondary: #999;
 
     --button-primary-hover: #ccc;
